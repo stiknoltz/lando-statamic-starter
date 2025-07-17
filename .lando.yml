@@ -14,7 +14,8 @@ services:
       environment:
         PHP_IDE_CONFIG: "serverName=appserver"
     build_as_root:
-      - apt install nodejs
+      - apt update -y
+      - apt install -y nodejs npm
     build:
       - chmod u+x /app/lando/statamic_install.sh
       - /app/lando/statamic_install.sh
