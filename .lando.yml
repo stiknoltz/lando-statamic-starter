@@ -1,0 +1,23 @@
+name: lando-statamic-starter
+recipe: laravel
+config:
+  php: 8.3
+  webroot: public
+  xdebug: true
+  cache: redis
+  via: nginx
+  config:
+    php: lando/lando.php.ini
+services:
+  appserver:
+    overrides:
+      environment:
+        PHP_IDE_CONFIG: "serverName=appserver"
+    build:
+      - chmod u+x /app/lando/statamic_install.sh
+      - /app/lando/statamic_install.sh
+    run:
+      - php artisan migrate
+tooling:
+    npm:
+      service: appserver
