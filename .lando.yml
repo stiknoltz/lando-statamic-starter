@@ -13,6 +13,8 @@ services:
     overrides:
       environment:
         PHP_IDE_CONFIG: "serverName=appserver"
+    build_as_root:
+      - apt install nodejs
     build:
       - chmod u+x /app/lando/statamic_install.sh
       - /app/lando/statamic_install.sh
