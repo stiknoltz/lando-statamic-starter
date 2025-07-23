@@ -13,7 +13,7 @@ git clone git@github.com:stiknoltz/lando-statamic-starter.git
 ```
 
 Or just as good, you can download the .zip file using the Code dropdown above. 
-This prevents you from having a this .git repo and allows you to start a new 
+This prevents you from having this .git repo and allows you to start a new 
 repository should you wish. 
 
 Following that, just drop into your new directory. 
