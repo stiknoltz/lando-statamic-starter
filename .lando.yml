@@ -19,6 +19,7 @@ services:
     build:
       - chmod u+x /app/lando/statamic_install.sh
       - /app/lando/statamic_install.sh
+      - npm install
     run:
       - php artisan migrate
 tooling:
