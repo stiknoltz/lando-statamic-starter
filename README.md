@@ -27,3 +27,18 @@ And start up Lando.
 ```shell
 lando start
 ```
+
+This will step through the Statamic install process. Be ready for a few questions.
+
+## What Just Happened?
+
+Lando translated the .lando.yml file into a Docker Compose directive. 
+Docker then spun up a PHP appserver for you with everything you need to run Statamic. 
+The URLs provided to you at the end of the `lando start` sequence are now functional 
+and your codebase is now sitting in your project root. 
+
+## What Next?
+
+This installer handles the "Install Statamic" section of [this page](https://statamic.dev/quick-start-guide).
+
+From there you can start working at 
