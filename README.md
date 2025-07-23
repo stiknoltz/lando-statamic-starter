@@ -41,4 +41,4 @@ and your codebase is now sitting in your project root.
 
 This installer handles the "Install Statamic" section of [this page](https://statamic.dev/quick-start-guide).
 
-From there you can start working at 
+From there you can start working on your new website.
